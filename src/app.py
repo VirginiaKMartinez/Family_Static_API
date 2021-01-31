@@ -72,9 +72,9 @@ def delete_member(id):
     user = jackson_family.delete_member(id)
     print(user)
     if user:
-        return jsonify({"Done!": True}), 200
+        return jsonify({"done": True}), 200
     
-    return jsonify('Dad request'), 404
+    return jsonify('Bad request'), 404
 
 
 # this only runs if `$ python src/app.py` is executed
